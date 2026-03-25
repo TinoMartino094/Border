@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "growing-border",
+	"version": "${version}",
+	"name": "Growing Border",
+	"description": "A server-side Fabric mod that turns world border expansion into a collaborative economy. Players deposit configurable currency items via the /border grow command to fund border growth — each dimension tracks its own deposit pool, and the border expands by one chunk ring (32 blocks) whenever enough funds accumulate. The cost scales dynamically with border size, making early expansion cheap and later growth progressively more rewarding. Tab-list headers keep everyone informed of the current deposit progress in real time.",
+	"authors": [
+		"TinoMartino"
+	],
+	"contact": {
+		"sources": "https://github.com/TinoMartino/growing-border"
+	},
+	"license": "MIT",
+	"icon": "assets/growing-border/icon.png",
+	"environment": "server",
+	"entrypoints": {
+		"main": [
+			"com.tino.border.GrowingBorder"
+		]
+	},
+	"mixins": [
+		"growing-border.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~26.1",
+		"java": ">=25",
+		"fabric-api": "*"
+	},
+	"custom": {
+		"fabric-api:client-optional": true
+	}
+}
