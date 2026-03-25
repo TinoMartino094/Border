@@ -12,7 +12,7 @@
 	},
 	"license": "MIT",
 	"icon": "assets/growing-border/icon.png",
-	"environment": "server",
+	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"com.tino.border.GrowingBorder"
